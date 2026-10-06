@@ -64,8 +64,10 @@ section { max-width: 1200px; margin: 5rem auto; padding: 0 2rem; scroll-margin-t
 .about-text p:last-child { margin-bottom: 0; }
 
 /* Capability Matrix Layout */
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
-.service-card { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(4px); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); box-shadow: var(--shadow); }
+.services-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+.services-grid .service-card { grid-column: span 2; }
+.services-grid .service-card:nth-child(n+4) { grid-column: span 3; }
+.service-card { background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(4px); padding: 2.25rem 2rem; display: flex; flex-direction: column; justify-content: flex-start; border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); box-shadow: var(--shadow); }
 .service-card:hover { transform: translateY(-4px); border-color: var(--primary); background: var(--white); }
 .service-card h4 { font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--dark); font-weight: 700; }
 .service-card p { color: var(--text); font-size: 0.95rem; }
@@ -151,9 +153,17 @@ footer .eeo-tag { color: var(--primary-light); font-weight: 600; font-size: 0.85
 
 /* Responsive Layout Breakpoints */
 @media (max-width: 968px) {
+    .services-grid .service-card,
+    .services-grid .service-card:nth-child(n+4) { grid-column: span 3; }
+    .services-grid .service-card:last-child { grid-column: span 6; }
     .bottom-layout-grid { grid-template-columns: 1fr; gap: 3rem; }
     .col-1, .col-2, .col-3, .col-4, .col-5 { grid-column: span 6; }
     .site-bg-logo { width: 85vw; }
+}
+@media (max-width: 600px) {
+    .services-grid .service-card,
+    .services-grid .service-card:nth-child(n+4),
+    .services-grid .service-card:last-child { grid-column: span 6; }
 }
 @media (max-width: 768px) {
     .nav-container { flex-direction: column; gap: 1.25rem; }
