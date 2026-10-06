@@ -39,7 +39,7 @@
         <h2 class="section-title">Employment Application</h2>
         <div class="application-box">
             <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 700;">Employment Application</h3>
-            <p class="form-subtitle">Submit your field certifications and previous job history below to initiate human resource screening.</p>
+            <p class="form-subtitle">Submit your field certifications and previous job history below to initiate human resource screening. Fields marked * are required; everything else is optional.</p>
 
             <form id="application-form" method="POST">
                 <div class="form-grid">
@@ -49,28 +49,28 @@
                         <input type="text" id="full-name" name="full_name" required placeholder="First, Last, M.I.">
                     </div>
                     <div class="form-group col-2">
-                        <label for="app-date">Application Date *</label>
-                        <input type="date" id="app-date" name="app_date" required>
+                        <label for="app-date">Application Date</label>
+                        <input type="date" id="app-date" name="app_date" readonly>
                     </div>
                     <div class="form-group col-4">
-                        <label for="address">Street Address *</label>
-                        <input type="text" id="address" name="address" required placeholder="123 Main Street">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main Street">
                     </div>
                     <div class="form-group col-2">
                         <label for="unit">Apartment / Unit #</label>
                         <input type="text" id="unit" name="unit" placeholder="Apt 4B">
                     </div>
                     <div class="form-group col-2">
-                        <label for="city">City *</label>
-                        <input type="text" id="city" name="city" required placeholder="Summerfield">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Summerfield">
                     </div>
                     <div class="form-group col-2">
-                        <label for="state">State *</label>
-                        <input type="text" id="state" name="state" required placeholder="NC">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NC">
                     </div>
                     <div class="form-group col-2">
-                        <label for="zip">ZIP Code *</label>
-                        <input type="text" id="zip" name="zip" required placeholder="27358">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" placeholder="27358">
                     </div>
                     <div class="form-group col-3">
                         <label for="phone">Phone Number *</label>
@@ -81,12 +81,12 @@
                         <input type="email" id="email" name="email" required placeholder="name@domain.com">
                     </div>
                     <div class="form-group col-3">
-                        <label for="avail-date">Date Available *</label>
-                        <input type="date" id="avail-date" name="avail_date" required>
+                        <label for="avail-date">Date Available</label>
+                        <input type="date" id="avail-date" name="avail_date">
                     </div>
                     <div class="form-group col-3">
-                        <label for="salary">Desired Salary * ($)</label>
-                        <input type="text" id="salary" name="salary" required placeholder="Hourly or Annual">
+                        <label for="salary">Desired Salary ($)</label>
+                        <input type="text" id="salary" name="salary" placeholder="Hourly or Annual">
                     </div>
                     <div class="form-group col-6">
                         <label for="position">Position Applied For *</label>
@@ -95,9 +95,9 @@
 
                     <!-- Disclosures Matrix -->
                     <div class="form-group col-3">
-                        <label>Are you a United States Citizen? *</label>
+                        <label>Are you a United States Citizen?</label>
                         <div class="choice-matrix">
-                            <label class="choice-option"><input type="radio" name="citizen" value="yes" required> YES</label>
+                            <label class="choice-option"><input type="radio" name="citizen" value="yes"> YES</label>
                             <label class="choice-option"><input type="radio" name="citizen" value="no"> NO</label>
                         </div>
                     </div>
@@ -109,9 +109,9 @@
                         </div>
                     </div>
                     <div class="form-group col-3">
-                        <label>Have you ever worked for this company? *</label>
+                        <label>Have you ever worked for this company?</label>
                         <div class="choice-matrix">
-                            <label class="choice-option"><input type="radio" name="past-emp" value="yes" required> YES</label>
+                            <label class="choice-option"><input type="radio" name="past-emp" value="yes"> YES</label>
                             <label class="choice-option"><input type="radio" name="past-emp" value="no"> NO</label>
                         </div>
                     </div>
@@ -120,9 +120,9 @@
                         <input type="text" id="past-date" name="past_date" placeholder="Year">
                     </div>
                     <div class="form-group col-6">
-                        <label>Have you ever been convicted of a felony? *</label>
+                        <label>Have you ever been convicted of a felony?</label>
                         <div class="choice-matrix" style="margin-bottom: 0.5rem;">
-                            <label class="choice-option"><input type="radio" name="felony" value="yes" required> YES</label>
+                            <label class="choice-option"><input type="radio" name="felony" value="yes"> YES</label>
                             <label class="choice-option"><input type="radio" name="felony" value="no"> NO</label>
                         </div>
                         <input type="text" name="felony-explain" placeholder="If yes, please explain">
@@ -131,8 +131,8 @@
                     <!-- High School Module -->
                     <div class="form-divider-label">High School Qualifications</div>
                     <div class="form-group col-3">
-                        <label for="hs">High School Name *</label>
-                        <input type="text" id="hs" name="hs" required>
+                        <label for="hs">High School Name</label>
+                        <input type="text" id="hs" name="hs">
                     </div>
                     <div class="form-group col-3">
                         <label for="hs-addr">Location / Address</label>
@@ -147,9 +147,9 @@
                         <input type="date" id="hs-to" name="hs_to">
                     </div>
                     <div class="form-group col-1">
-                        <label>Graduated? *</label>
+                        <label>Graduated?</label>
                         <div class="choice-matrix">
-                            <label class="choice-option"><input type="radio" name="hs-grad" value="yes" required> Y</label>
+                            <label class="choice-option"><input type="radio" name="hs-grad" value="yes"> Y</label>
                             <label class="choice-option"><input type="radio" name="hs-grad" value="no"> N</label>
                         </div>
                     </div>
@@ -189,55 +189,55 @@
                     </div>
 
                     <!-- Employment Record Block 1 -->
-                    <div class="form-divider-label">Employment History: Reference 1 *</div>
+                    <div class="form-divider-label">Employment History: Reference 1</div>
                     <div class="form-group col-4">
-                        <label for="c1">Company Name *</label>
-                        <input type="text" id="c1" name="job1_company" required>
+                        <label for="c1">Company Name</label>
+                        <input type="text" id="c1" name="job1_company">
                     </div>
                     <div class="form-group col-2">
-                        <label for="p1">Phone Number *</label>
-                        <input type="tel" id="p1" name="job1_phone" required>
+                        <label for="p1">Phone Number</label>
+                        <input type="tel" id="p1" name="job1_phone">
                     </div>
                     <div class="form-group col-4">
-                        <label for="a1">Address *</label>
-                        <input type="text" id="a1" name="job1_address" required>
+                        <label for="a1">Address</label>
+                        <input type="text" id="a1" name="job1_address">
                     </div>
                     <div class="form-group col-2">
-                        <label for="s1">Supervisor *</label>
-                        <input type="text" id="s1" name="job1_supervisor" required>
+                        <label for="s1">Supervisor</label>
+                        <input type="text" id="s1" name="job1_supervisor">
                     </div>
                     <div class="form-group col-2">
-                        <label for="jt1">Job Title *</label>
-                        <input type="text" id="jt1" name="job1_title" required>
+                        <label for="jt1">Job Title</label>
+                        <input type="text" id="jt1" name="job1_title">
                     </div>
                     <div class="form-group col-2">
-                        <label for="ss1">Starting Salary ($) *</label>
-                        <input type="text" id="ss1" name="job1_start_salary" required>
+                        <label for="ss1">Starting Salary ($)</label>
+                        <input type="text" id="ss1" name="job1_start_salary">
                     </div>
                     <div class="form-group col-2">
-                        <label for="es1">Ending Salary ($) *</label>
-                        <input type="text" id="es1" name="job1_end_salary" required>
+                        <label for="es1">Ending Salary ($)</label>
+                        <input type="text" id="es1" name="job1_end_salary">
                     </div>
                     <div class="form-group col-6">
-                        <label for="r1">Key Duties & Heavy Equipment Operated *</label>
-                        <textarea id="r1" name="job1_duties" rows="2" required></textarea>
+                        <label for="r1">Key Duties & Heavy Equipment Operated</label>
+                        <textarea id="r1" name="job1_duties" rows="2"></textarea>
                     </div>
                     <div class="form-group col-2">
-                        <label for="f1">From Date *</label>
-                        <input type="date" id="f1" name="job1_from" required>
+                        <label for="f1">From Date</label>
+                        <input type="date" id="f1" name="job1_from">
                     </div>
                     <div class="form-group col-2">
-                        <label for="t1">To Date *</label>
-                        <input type="date" id="t1" name="job1_to" required>
+                        <label for="t1">To Date</label>
+                        <input type="date" id="t1" name="job1_to">
                     </div>
                     <div class="form-group col-2">
-                        <label for="rl1">Reason for Leaving *</label>
-                        <input type="text" id="rl1" name="job1_reason_leaving" required>
+                        <label for="rl1">Reason for Leaving</label>
+                        <input type="text" id="rl1" name="job1_reason_leaving">
                     </div>
                     <div class="form-group col-6">
-                        <label>May we contact your previous supervisor for a reference? *</label>
+                        <label>May we contact your previous supervisor for a reference?</label>
                         <div class="choice-matrix">
-                            <label class="choice-option"><input type="radio" name="contact1" value="yes" required> YES</label>
+                            <label class="choice-option"><input type="radio" name="contact1" value="yes"> YES</label>
                             <label class="choice-option"><input type="radio" name="contact1" value="no"> NO</label>
                         </div>
                     </div>
@@ -351,39 +351,39 @@
                     </div>
 
                     <!-- Professional References -->
-                    <div class="form-divider-label">Professional References (List Two) *</div>
+                    <div class="form-divider-label">Professional References (List Two)</div>
                     <div class="form-group col-2">
-                        <label for="rname1">Reference 1 Full Name *</label>
-                        <input type="text" id="rname1" name="ref1_name" required>
+                        <label for="rname1">Reference 1 Full Name</label>
+                        <input type="text" id="rname1" name="ref1_name">
                     </div>
                     <div class="form-group col-2">
-                        <label for="rrel1">Relationship *</label>
-                        <input type="text" id="rrel1" name="ref1_relationship" required>
+                        <label for="rrel1">Relationship</label>
+                        <input type="text" id="rrel1" name="ref1_relationship">
                     </div>
                     <div class="form-group col-2">
-                        <label for="rph1">Phone Number *</label>
-                        <input type="tel" id="rph1" name="ref1_phone" required>
+                        <label for="rph1">Phone Number</label>
+                        <input type="tel" id="rph1" name="ref1_phone">
                     </div>
                     <div class="form-group col-6">
-                        <label for="radd1">Company & Business Address *</label>
-                        <input type="text" id="radd1" name="ref1_address" required>
+                        <label for="radd1">Company & Business Address</label>
+                        <input type="text" id="radd1" name="ref1_address">
                     </div>
 
                     <div class="form-group col-2" style="margin-top: 1rem;">
-                        <label for="rname2">Reference 2 Full Name *</label>
-                        <input type="text" id="rname2" name="ref2_name" required>
+                        <label for="rname2">Reference 2 Full Name</label>
+                        <input type="text" id="rname2" name="ref2_name">
                     </div>
                     <div class="form-group col-2">
-                        <label for="rrel2">Relationship *</label>
-                        <input type="text" id="rrel2" name="ref2_relationship" required>
+                        <label for="rrel2">Relationship</label>
+                        <input type="text" id="rrel2" name="ref2_relationship">
                     </div>
                     <div class="form-group col-2">
-                        <label for="rph2">Phone Number *</label>
-                        <input type="tel" id="rph2" name="ref2_phone" required>
+                        <label for="rph2">Phone Number</label>
+                        <input type="tel" id="rph2" name="ref2_phone">
                     </div>
                     <div class="form-group col-6">
-                        <label for="radd2">Company & Business Address *</label>
-                        <input type="text" id="radd2" name="ref2_address" required>
+                        <label for="radd2">Company & Business Address</label>
+                        <input type="text" id="radd2" name="ref2_address">
                     </div>
 
                     <!-- Military Service History -->
@@ -424,8 +424,8 @@
                         <input type="text" id="signature" name="signature" required placeholder="John Owen Doe">
                     </div>
                     <div class="form-group col-2">
-                        <label for="sig-date">Date Signed *</label>
-                        <input type="date" id="sig-date" name="sig_date" required>
+                        <label for="sig-date">Date Signed</label>
+                        <input type="date" id="sig-date" name="sig_date" readonly>
                     </div>
                 </div>
 
@@ -449,7 +449,17 @@
         var ENDPOINT = "https://script.google.com/macros/s/AKfycbwFibkXxay3uamS27oBa-34J4fJxByjiZp8OLCGGOpRMkCLrUh9n3z3fnsjP7vAO_ibeg/exec";
         var FALLBACK_EMAIL = "essa@crossroadsinfrastructure.com";
 
+        function today() {
+            var d = new Date();
+            return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+        }
+        function setDates() {
+            document.getElementById("app-date").value = today();
+            document.getElementById("sig-date").value = today();
+        }
+
         var form = document.getElementById("application-form");
+        setDates();
         var btn = document.getElementById("submit-btn");
         var status = document.getElementById("form-status");
 
@@ -465,6 +475,7 @@
                 show("Online applications are not switched on yet. Please email " + FALLBACK_EMAIL + " to apply.", false);
                 return;
             }
+            setDates();
             var data = {};
             new FormData(form).forEach(function (v, k) { data[k] = String(v); });
             btn.disabled = true;
@@ -476,6 +487,7 @@
                 body: JSON.stringify(data)
             }).then(function () {
                 form.reset();
+                setDates();
                 btn.textContent = "Application Submitted";
                 show("Thank you. Your application has been received and our team will review it.", true);
             }).catch(function () {
